@@ -8,7 +8,9 @@ public class Main {
                 "1. Addition\n" +
                 "2. Subtraction\n" +
                 "3. Multiplication\n" +
-                "4. Division\n");
+                "4. Division\n"+
+                "5. Modulus\n" +
+                "6. Exponential\n");
         System.out.println("Which operation");
         int op = sc.nextInt();
         System.out.println("Enter the first number: ");
@@ -18,16 +20,22 @@ public class Main {
 
         switch (op) {
             case 1:
-                System.out.println("Addition of " + (a) + " & " + (b) + " = " + (a + b));
+                System.out.println("Addition of " + (a) + " + " + (b) + " = " + (a + b));
                 break;
             case 2:
-                System.out.println("Subtraction of " + (a) + " & " + (b) + " = " + (a - b));
+                System.out.println("Subtraction of " + (a) + " - " + (b) + " = " + (a - b));
                 break;
             case 3:
-                System.out.println("Multiplication of " + (a) + " & " + (b) + " = " + (a * b));
+                System.out.println("Multiplication of " + (a) + " * " + (b) + " = " + (a * b));
                 break;
             case 4:
-                System.out.println("Division of " + (a) + " & " + (b) + " = " + (a / b));
+                System.out.println("Division of " + (a) + " / " + (b) + " = " + (a / b));
+                break;
+            case 5:
+                System.out.println("Modulus of " + (a) + " % " + (b) + " = " + (a % b));
+                break;
+            case 6:
+                System.out.println("Exponential of " + (a) + " ^ " + (b) + " = " + Math.pow(a, b));
                 break;
             default:
                 System.out.println("Invalid input");
